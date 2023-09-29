@@ -1,0 +1,102 @@
+<br><br><br>
+<div class="container" style="text-align: center;">
+    <form [formGroup]="NomineeForm">
+        <mat-card>
+            <br>
+            <mat-card-title>
+                <div style="background-color: #dcc8de; text-align: center;">
+                    <strong style="font-family: 'Playfair Display', serif; font-size: 35px; ">
+                        <hr>
+                        AccountHolder Form
+                    </strong>
+                </div>
+                <hr>
+            </mat-card-title>
+            <div mat-dialog-content class="content">
+                <div class="row" style="padding:30px; font-family: 'Playfair Display', serif;">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput type="text" formControlName="accountholderName" required pattern="^[^0-9]+$">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>AccountType</mat-label>
+                        <mat-select formControlName="accountType" required>
+                            <mat-option value="Current Account">Current Account</mat-option>
+                            <mat-option value="Savings Account">Savings Account</mat-option>
+                            <mat-option value="Recurring Deposit Account">Recurring Deposit Account</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Account Number</mat-label>
+                        <input matInput type="text" formControlName="accountNumber" required maxlength="15"
+                            minlength="15">
+                    </mat-form-field>
+                </div>
+
+                <button style="margin-left: 38%;" mat-raised-button type="button" color="accent" (click)="AddNominee()">
+                    Add Nominee Details
+                </button>
+
+                <div style="font-family: 'Playfair Display', serif; font-size: 35px;">
+                    <mat-card>
+                        <div formArrayName="nominees" *ngIf="addNominee" class="custom-form-array">
+                            <mat-card-title style="font-family: 'Playfair Display', serif; font-size: 30px;">
+                                <div style="background-color: #dcc8de; text-align: center;">
+                                    <strong>
+                                        <hr>
+                                        Add Nominee
+                                        <hr>
+                                    </strong>
+                                </div>
+                            </mat-card-title>
+                            <div class="row" *ngFor="let item of details.controls; let i = index;"
+                                [formGroupName]="i" class="nominee-row">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Nominee Name</mat-label>
+                                    <input matInput type="text" formControlName="nomineeName">
+                                </mat-form-field>
+
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Age</mat-label>
+                                    <mat-select formControlName="nomineeAge" required>
+                                        <mat-option *ngFor="let age of ageOptions" [value]="age">{{ age }}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Address Type</mat-label>
+                                    <mat-select formControlName="addressType" required>
+                                        <mat-option value="Home Address">Home Address</mat-option>
+                                        <mat-option value="Office Address">Office Address</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Address</mat-label>
+                                    <input matInput type="text" formControlName="address">
+                                </mat-form-field>
+
+                                <button mat-raised-button type="button" color="primary" (click)="addRowItem(i)">Add</button>
+                                <button mat-raised-button type="button" color="warn" (click)="removeRowItem(i)">Remove</button>
+                            </div>
+                        </div>
+
+                        <div mat-dialog-actions class="action">
+                            <button mat-raised-button type="submit" color="primary" [disabled]="NomineeForm.invalid"
+                                (click)="onFormSubmit(NomineeForm.value)">
+                                Save
+                            </button>
+
+                            <button mat-raised-button type="button" (click)="cancel()" mat-dialog-close>
+                                Cancel
+                            </button>
+                        </div>
+                    </mat-card>
+                    <br>
+                </div>
+            </div>
+        </mat-card>
+    </form>
+</div>

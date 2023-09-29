@@ -1,0 +1,88 @@
+/* Style for the container */
+.container {
+    text-align: center;
+    margin-top: -70px;
+}
+
+/* Style for the main card */
+mat-card {
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Style for the main card title */
+mat-card-title {
+    background-color: #dcc8de;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+/* Style for the form fields and buttons */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 5px;
+}
+
+/* Style for the Nominee row */
+.nominee-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Style for the form group within the Nominee row */
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+    width: 200%; /* Increase the width to 100% */
+}
+
+/* Additional styles for specific elements */
+.row {
+    padding: 10px;
+}
+
+.action {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 38%;
+}
+
+/* Custom style for the form array */
+.custom-form-array {
+    background-color: #ee1515; /* Set the background color */
+    padding: 20px; /* Add some padding to the form array */
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 20px; /* Add top margin for spacing */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+/* Style for the input fields within the form array */
+.custom-form-array mat-form-field  {
+    border: 1px dotted black; /* Add a black border to the input fields */
+    padding: 16px 10px 0px 10px; /* Add some padding to the input fields */
+}
+
+/* Style for the placeholder text */
+.custom-form-array input::placeholder {
+    color: #777; /* Adjust the color of the placeholder text */
+    font-style: italic; /* Make the placeholder text italic */
+}
+
+/* Ensure the child elements within the form array remain visible */
+.custom-form-array * {
+    visibility: visible;
+}
+
+/* Additional styles as needed */
+
+
