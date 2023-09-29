@@ -1,0 +1,8 @@
+
+
+GetAllAccountHolderList          :-  https://localhost:7232/api/AccountHolder/GetAllAccountHolderList
+GetAllAccountHolderbyId          :-  https://localhost:7232/api/AccountHolder/GetAllAccountHolderbyId?AccountHolderId=1
+AddAccountHolderDetails          :-  https://localhost:7232/api/AccountHolder/AddAccountHolderDetails
+UpdateAccountHolderDetails       :-  https://localhost:7232/api/AccountHolder/UpdateAccountHolderDetails
+DeleteAccountHolderDetailsById   :-  https://localhost:7232/api/AccountHolder/DeleteAccountHolderDetailsById?AccountHolderId=1
+DeleteNomineeDetailsById         :-  https://localhost:7232/api/AccountHolder/DeleteNomineeDetailsById?NomineeId=1

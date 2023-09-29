@@ -1,0 +1,37 @@
+{
+  "accountholderId": 3,
+  "accountholderName": "Shoaib Akhtar",
+  "accountType": "Recurring Deposit Account",
+  "accountNumber": "123456789543210",
+  "nominees": [
+    {
+      "nomineeId": 5,
+      "nomineeName": "AAA",
+      "nomineeAge": 50,
+      "addressType": "Home Address",
+      "address": "Dehradun",
+      "accountHolderId": 3,
+      "isActive": true,
+      "isDeleted": false
+    },{
+      "nomineeId": 6,
+      "nomineeName": "BBB",
+      "nomineeAge": 40,
+      "addressType": "Home Address",
+      "address": "Dehradun",
+      "accountHolderId": 3,
+      "isActive": true,
+      "isDeleted": false
+    },
+{
+      "nomineeId": 0,
+      "nomineeName": "ZZZ",
+      "nomineeAge": 45,
+      "addressType": "Office Address",
+      "address": "Dehradun",
+      "accountHolderId": 3,
+      "isActive": true,
+      "isDeleted": false
+    }
+  ]
+}

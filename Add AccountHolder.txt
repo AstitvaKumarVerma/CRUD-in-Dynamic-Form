@@ -1,0 +1,84 @@
+{
+  "accountholderName": "Satyam",
+  "accountType": "Current Account",
+  "accountNumber": "543210987654321",
+  "isActive": true,
+  "isDeleted": false,
+  "nominees": [
+    {
+      "nomineeId": 0,
+      "nomineeName": "X-Man",
+      "nomineeAge": 40,
+      "addressType": "Office Address",
+      "address": "Garhwal",
+      "accountHolderId": 0,
+      "isActive": true,
+      "isDeleted": false
+    },
+{
+      "nomineeId": 0,
+      "nomineeName": "Z-Man",
+      "nomineeAge": 45,
+      "addressType": "Home Address",
+      "address": "Garhwal",
+      "accountHolderId": 0,
+      "isActive": true,
+      "isDeleted": false
+    }
+  ]
+}
+
+----------------------------------------------------------
+
+{
+  "accountholderName": "Shoaib",
+  "accountType": "Recurring Deposit Account",
+  "accountNumber": "123456789543210",
+  "isActive": true,
+  "isDeleted": false,
+  "nominees": [
+    {
+      "nomineeId": 0,
+      "nomineeName": "AAA",
+      "nomineeAge": 50,
+      "addressType": "Office Address",
+      "address": "Dehradun",
+      "accountHolderId": 0,
+      "isActive": true,
+      "isDeleted": false
+    },
+{
+      "nomineeId": 0,
+      "nomineeName": "BBB",
+      "nomineeAge": 48,
+      "addressType": "Office Address",
+      "address": "Dehradun",
+      "accountHolderId": 0,
+      "isActive": true,
+      "isDeleted": false
+    }
+
+  ]
+}
+
+------------------------------------------------------
+
+{
+  "accountholderName": "Sakshi",
+  "accountType": "Current Account",
+  "accountNumber": "123123456456789",
+  "isActive": true,
+  "isDeleted": false,
+  "nominees": [
+    {
+      "nomineeId": 0,
+      "nomineeName": "SSS",
+      "nomineeAge": 40,
+      "addressType": "Rishikesh",
+      "address": "Home Address",
+      "accountHolderId": 0,
+      "isActive": true,
+      "isDeleted": false
+    }
+  ]
+}

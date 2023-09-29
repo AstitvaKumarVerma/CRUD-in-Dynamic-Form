@@ -1,0 +1,1 @@
+Scaffold-DbContext "Server=192.168.0.240;Database=sdirectdb;User ID=sdirectdb;Password=sdirectdb;Trusted_Connection=False;MultipleActiveResultSets=true;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -t Astitva_AccountHolderTable, Astitva_NomineeTable -f
